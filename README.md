@@ -594,7 +594,7 @@ The Maxwell model is the simplest, and for tides it tends to **underestimate dis
 - **Andrade rheology**, adding a transient creep term to the Maxwell compliance, with an exponent α typically around 0.2 to 0.4:
 
 $$
-J^{*(\omega)} = J_U + \beta\,\Gamma(1+\alpha)\,(i\omega)^{-\alpha} - \frac{i}{\omega\eta}, \qquad \mu^* = \frac{1}{J^*}
+J^{*(\omega)} = J_U + \beta\,\Gamma(1+\alpha)\,(i\omega)^{-\alpha} - \frac{i}{\omega\eta}, \qquad \mu^* = \frac{1}{J^{*}}
 $$
 
 Use the parameterization of Efroimsky (2012) or Renaud and Henning (2018) for β in terms of η and μ, and cite which you chose.
