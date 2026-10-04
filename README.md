@@ -276,7 +276,7 @@ In Phase 2 you used the Radau-Darwin relation on trust. Now derive it, in four s
 1. **Clairaut's equation.** For a rotating fluid body in hydrostatic equilibrium, the surface flattening ε(r) of each equipotential obeys a second-order ODE involving the density profile and the mean density ρ̄(r) inside radius r. Derive it, to first order in the small rotation parameter, from the condition that the total potential is constant on each level surface.
 2. **Radau's transformation.** Define η(r) = r ε'(r)/ε(r). Show that Clairaut's equation becomes a first-order nonlinear ODE for η, which is much better behaved numerically.
 3. **Boundary condition and the Love number.** At the surface, η_s is tied to the fluid Love number k_f by an algebraic relation. Derive it. It must give k_f = 3/2 for the uniform body (where ε is constant, so η = 0).
-4. **The Darwin-Radau approximation.** The moment of inertia is expressed through an integral weighted by ε. Using a smooth approximation for how η varies, it reduces to the closed form you used, C/MR² = (2/3)\[1 − (2/5)√((4 − k_f)/(1 + k_f))\]. Follow Hubbard's _Planetary Interiors_ or Zharkov and Trubitsyn for the detailed steps. The standard literature states the relation as accurate to a small fraction of a percent for bodies like these, but you will test that yourself below.
+4. **The Darwin-Radau approximation.** The moment of inertia is expressed through an integral weighted by ε. Using a smooth approximation for how η varies, it reduces to the closed form you used, C/MR² = (2/3)\[1 − (2/5)√((4 − k*f)/(1 + k_f))\]. Follow Hubbard's \_Planetary Interiors* or Zharkov and Trubitsyn for the detailed steps. The standard literature states the relation as accurate to a small fraction of a percent for bodies like these, but you will test that yourself below.
 
 ### Step 4: test the approximation numerically
 
@@ -607,7 +607,7 @@ $$
 \eta(T) = \eta_0\,\exp\!\left[\frac{E_a}{R_g}\left(\frac{1}{T} - \frac{1}{T_m}\right)\right]
 $$
 
-with activation energy E_a, and add a sharp drop in both rigidity and viscosity once the melt fraction passes a critical value (a _rheological transition_, around 40 percent in much of the Io literature; verify). Viscosity changes by many orders of magnitude over a few hundred kelvin, so heating is exquisitely sensitive to temperature.
+with activation energy E*a, and add a sharp drop in both rigidity and viscosity once the melt fraction passes a critical value (a \_rheological transition*, around 40 percent in much of the Io literature; verify). Viscosity changes by many orders of magnitude over a few hundred kelvin, so heating is exquisitely sensitive to temperature.
 
 ### Step 3: the thermal thermostat (Io)
 
