@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+dependencies = [
+    "numpy>=2.5.3",
+    "scipy>=1.18.1",
+    "matplotlib>=3.11.2",
+    "emcee>=3.1.6",
+    "PyYAML>=6.0.3",
+]
+
+name = "moons-interior"
+version = "0.0.1"
+description = "Interior Structure & Tidal Heating of the Moons"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Rodrigo Souza" }]
+requires-python = ">=3.12"
+
+
+[project.optional-dependencies]
+dev = ["pytest>=9.1.1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+
+# --- test ------------------------------------------------------------------
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+# Numerical code should never silently swallow a warning.
+filterwarnings = ["error"]

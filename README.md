@@ -2,6 +2,28 @@
 
 Oct 4, 2026 · @Rodrigo de Souza
 
+## Local build (with virtual environment)
+
+### Taskfile
+
+- Install taskfile.dev"
+  `curl -1sLf 'https://dl.cloudsmith.io/public/task/task/setup.deb.sh' | sudo -E bash && sudo apt install task`
+
+### Python
+
+Steps to download and install dependencies for local development
+
+- Create a virtual environment:
+  `python -m venv .venv`
+  or
+  `python3 -m venv .venv`
+
+- Activate the virtual environment:
+  - Windows users: `source .venv/Scripts/activate`
+  - Linux/Mac users: `source .venv/bin/activate`
+- Install dependencies:
+  `pip install -r requirements.txt`
+
 ## How to use this guide
 
 The goal is a Python code base that takes a moon's mass, radius and moment of inertia, builds layered interior models, computes its tidal response and heating, and reproduces published numbers for Ganymede, Europa, Io and Enceladus. You do it in ten phases, easiest first, and each phase ends with a number you must reproduce before moving on.
